@@ -24,12 +24,13 @@ function Home() {
         <img src={home} className='object-cover md:object-fill w-[100%] lg:h-[100%] h-[50vh]' alt="" />
     <span className='lg:text-[70px] absolute md:text-[40px] lg:top-[10%] top-[15%] w-[100%] flex items-center justify-center text-white font-bold text-[20px]'>Grow your skills to advance</span>
         <span className='lg:text-[70px] absolute md:text-[20px] lg:top-[18%] top-[20%] w-[100%] flex items-center justify-center text-white font-bold text-[20px]'>your career path</span>
+
+        <div className='absolute lg:top-[30%] top-[75%] md:top-[80%] w-[100%] px-4 flex items-center justify-center gap-3 flex-wrap'>
+          <button onClick={() => navigate("/allcourses")} className='px-[20px] py-[10px] lg:bg-black border-2 lg:border-white border-black lg:text-white text-black rounded-[10px] text-[18px] font-light flex gap-2 cursor pointer'>View All Courses <SiViaplay className='w-[30px] h-[30px] lg:fill-white fill-black' /></button>
+          <button onClick={() => setShowAISearch(true)} className='px-[20px] py-[10px] lg:bg-white border-2 lg:border-white border-black lg:text-black bg-black text-white rounded-[10px] text-[18px] font-light flex gap-2 cursor pointer'>Search with AI <img src={ai} alt="" className='w-[30px] h-[30px] rounded-full hidden lg:block' /></button>
+        </div>
       </div>
 
-      <div className='mt-[80px] absolute lg:top-[30%] top-[75%] md:top-[80%] w-[100%] flex items-center justify-center gap-3 flex-wrap'>
-        <button onClick={() => navigate("/allcourses")} className='px-[20px] py-[10px] lg:bg-black border-2 lg:border-white border-black lg:text-white text-black rounded-[10px] text-[18px] font-light flex gap-2 cursor pointer'>View All Courses <SiViaplay className='w-[30px] h-[30px] lg:fill-white fill-black' /></button>
-          <button onClick={() => setShowAISearch(true)} className='px-[20px] py-[10px] lg:bg-white border-2 lg:border-white border-black lg:text-black bg-black text-white rounded-[10px] text-[18px] font-light flex gap-2 cursor pointer'>Search with AI <img src={ai} alt="" className='w-[30px] h-[30px] rounded-full hidden lg:block' /></button>
-    </div>
       <Logos/>
 
       {userData && (
