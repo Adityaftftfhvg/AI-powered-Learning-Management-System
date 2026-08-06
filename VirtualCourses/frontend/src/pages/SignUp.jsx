@@ -106,11 +106,13 @@ function SignUp() {
             <div className='w-[25%] h-[0.5px] bg-[#c4c4c4]'></div>
           </div>
 
-          <div className='w-[80%] h-[40px] border border-black rounded-[5px] flex items-center justify-center gap-1'>
+         <div
+            className='w-[80%] h-[40px] border border-black rounded-[5px] flex items-center justify-center gap-1 cursor-pointer hover:bg-gray-50'
+            onClick={() => window.location.href = `${serverUrl}/api/auth/google`}
+          >
             <img src={google} alt="google" height={18} width={18} />
             <span className='text-[18px] text-gray-500'>oogle</span>
           </div>
-
           <p className='text-xs text-gray-400'>
             Already have an account?{' '}
             <span className='text-black underline cursor-pointer' onClick={() => navigate("/Login")}>Sign In</span>
