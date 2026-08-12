@@ -45,8 +45,8 @@ function App() {
  <Route path='/createcourses' element={userData?.role === "Educator" ? <CreateCourse /> : <Navigate to="/signup" />} />
         <Route path='/editcourse/:courseId' element={userData?.role === "Educator" ? <EditCourse /> : <Navigate to="/signup" />} />
       <Route path='/managelectures/:courseId' element={userData?.role === "Educator" ? <ManageLectures /> : <Navigate to="/signup" />} />
-        <Route path='/allcourses' element={<AllCourses />} />
-       <Route path='/coursedetail/:courseId' element={<CourseDetail />} />
+        <Route path='/allcourses' element={userData ? <AllCourses /> : <Navigate to="/login" />} />
+       <Route path='/coursedetail/:courseId' element={userData ? <CourseDetail /> : <Navigate to="/login" />} />
    <Route path='/watchcourse/:courseId' element={userData ? <WatchCourse /> : <Navigate to="/login" />} />
          <Route path='/mockinterview' element={userData ? <MockInterview /> : <Navigate to="/login" />} />
         <Route path='/mylearning' element={userData ? <MyLearning /> : <Navigate to="/login" />} />
