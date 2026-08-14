@@ -20,10 +20,7 @@ An AI-powered Learning Management System (LMS) where educators can create and se
 - Educator dashboard
 - Create, edit, and manage courses
 - Upload and manage lectures per course (via Cloudinary)
-
-**Payments**
-- Razorpay-based course checkout and order verification
-
+- 
 ## Tech Stack
 
 **Frontend** (`VirtualCourses/frontend`)
@@ -85,7 +82,7 @@ AI-powered-Learning-Management-System-main/
 ### 1. Clone and install
 
 ```bash
-git clone <repo-url>
+git clone <https://github.com/Adityaftftfhvg/AI-powered-Learning-Management-System.git>
 cd AI-powered-Learning-Management-System-main/VirtualCourses
 
 # Backend
@@ -120,10 +117,6 @@ GOOGLE_CLIENT_SECRET=your_google_client_secret
 CLOUDINARY_NAME=your_cloudinary_cloud_name
 CLOUDINARY_API_KEY=your_cloudinary_api_key
 CLOUDINARY_API_SECRET=your_cloudinary_api_secret
-
-# Payments
-RAZORPAY_KEY_ID=your_razorpay_key_id
-RAZORPAY_KEY_SECRET=your_razorpay_key_secret
 
 # Email (password reset, notifications)
 EMAIL_USER=your_email_address
